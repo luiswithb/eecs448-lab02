@@ -46,7 +46,7 @@ bool LinkedList<T>::search(T value) const
 		}
 		else
 		{
-			temp = temp->getNext()
+			temp = temp->getNext();
 		}
 	}
 
@@ -111,6 +111,7 @@ bool LinkedList<T>::removeBack()
 	if(!isEmpty())
 	{
 		Node<T>* temp = m_front;
+
 		while(temp->getNext()->getNext() != nullptr)
 		{
 				temp = temp->getNext();
