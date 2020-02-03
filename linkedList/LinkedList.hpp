@@ -116,7 +116,7 @@ bool LinkedList<T>::removeBack()
 		while(lastNode != nullptr)
 		{
 			secondintoLast = secondintoLast->getNext();
-			lastNode = secondintoLast->getNext();
+			lastNode = secondintoLast->getNext()->getNext();
 		}
 
 		delete secondintoLast;
